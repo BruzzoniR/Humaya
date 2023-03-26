@@ -1,0 +1,392 @@
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+/*Navbar Pricipal*/
+.navbar {
+    position: relative;
+    height: 8rem;
+}
+
+.navbar a {
+    color: white!important;
+}
+
+.navbar-brand {
+    content: url(./IMAGENES/Logo/LogoHumaya100x100.png);
+    position: absolute;
+    left: 46%;
+    right: 46%;
+    margin:auto
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+
+/*Section Portada*/
+.portada {
+    background-image: url(./IMAGENES/Central/imagenCentral.png);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    margin-top: 0;
+    position: relative;
+}
+
+.texto-portada {
+    position: absolute;
+    right: 15px;
+    top: 5rem;
+    color: white;
+    width: 35%;    
+    align-items: end;
+    align-content: end;
+    margin-top: 3rem;
+    align-content: center;
+}
+
+.texto-portada p {
+    margin: 1rem 0 3rem;
+    text-shadow: 1px 1px #565252;
+}
+
+.btn-portada {
+    background-color: rgba(0, 0, 0, 0.667);
+    padding: 1rem 4rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5rem;
+    margin: 15px 4rem;
+}
+
+.btn-portada:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Section Calidad*/
+.caja {
+    color: white;
+    width: 60%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+
+}
+
+.container-calidad {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-calidad {
+    width: 5rem;
+}
+
+.texto-calidad {
+    color: #d9ad26;
+    font-weight: 100;
+}
+
+
+/*Section Productos*/
+.productos {
+    background-color: #565252;
+    color: #d3ab8b;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.productos h2 {
+    margin-bottom: 0;
+}
+
+.caja-productos {
+    display: flex;
+
+}
+
+.imagenes-producto {
+    width: 50%;
+    height: 25rem;
+}
+
+.imagen-producto {
+    width: 100%;
+	height: 25rem;
+	object-fit: cover;
+}
+
+.texto-producto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 25rem;
+    padding: 2rem;
+    background-color: black;
+    justify-content: center;
+}
+
+.texto-producto p:first-of-type {
+    color: white;
+}
+
+.link-producto {
+    border: 2px solid #d3ab8b;
+    padding: 0.5rem;
+    margin: 10px auto 10px auto;
+    color: #d3ab8b;
+    text-decoration: none;
+    width: 5rem;
+}
+
+.link-producto:hover {
+    border: 2px solid white;
+    color: white;
+}
+
+/*Section Quienes Somos*/
+.quienes {
+    margin-top: 0;
+}
+
+.carousel-inner {
+    height: 15rem;
+}
+
+/*Section Contacto*/
+.contacto {
+    text-align: center;
+}
+
+.contacto h2 {
+    color: white;
+}
+
+.imagen-y-form {
+    display: flex;
+    width: 100%;
+    background-color: #d8cabe;
+}
+
+.imagen-contacto {
+    width: 50%;
+    object-fit: cover;
+}
+
+.imagen-contacto img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #565252;
+    text-align: start;
+}
+
+textarea {
+    resize: none;
+}
+
+.formulario input , textarea{
+background: #584747;
+color: white;
+font-weight: 300;
+}
+
+.botones button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #565252;
+    color: #565252;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/*Section Footer*/
+footer {
+    background-color: black;
+    padding-top: 2rem;
+}
+
+footer h4{
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    width: 80%;
+    height: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer li {
+    margin-top: 1rem;
+}
+
+footer a:hover {
+    color: rgb(207, 205, 205);
+}
+
+.fa-brands {
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.fa-brands:hover {
+    color: rgb(207, 205, 205);
+}
+
+.menu-titulo {
+    color: #d3ab8b;
+}
+
+.direccion {
+    color: white;
+    font-weight: 200;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+    /*Navbar Pricipal*/
+.navbar {
+    height: auto;
+}
+
+.navbar a {
+    text-align: center;
+}
+
+.navbar-brand {
+    content: none;
+    position: static;
+}
+
+.navbar-nav {
+    margin-right: 1rem;
+    align-items: end;
+}
+
+/*Section Portada*/
+.portada {
+    background-position: center;
+}
+
+.texto-portada {
+    position: relative;
+    right: auto;
+    width: 80%;    
+    margin-top: 0;
+}
+
+.btn-portada {
+    margin:auto;
+}
+
+/*Section Calidad*/
+.caja {
+    width: 50%;
+}
+
+
+/*Section Productos*/
+
+.caja-productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.imagenes-producto {
+    width: 100%;
+    height: auto;
+}
+
+.imagen-producto {
+	height: 10rem;
+}
+
+.texto-producto {
+    width: 100%;
+}
+
+/*Section Quienes Somos*/
+.quienes {
+    margin-top: 0;
+}
+
+.quienes .caja {
+    width: 80%;
+    text-align: justify;
+    font-size: small;
+}
+
+.quienes h3 {
+    text-align: center;
+}
+
+/*Section Contacto*/
+.contacto {
+    text-align: center;
+}
+
+.contacto h2 {
+    color: white;
+}
+
+.imagen-y-form {
+    display: flex;
+    width: 100%;
+    background-color: #d8cabe;
+}
+
+.imagen-contacto {
+    display: none;
+}
+
+.imagen-y-form .caja {
+    width: 100%;
+}
+
+/*Section Footer*/
+
+.footer {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    font-size: smaller;
+}
+
+.logo-contacto {
+    display: none;
+}
+
+}
+
